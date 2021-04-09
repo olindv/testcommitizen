@@ -24,7 +24,9 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/git/commitlint.js'"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/git/commitlint.js'",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
   "eslintConfig": {
