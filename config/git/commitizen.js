@@ -1,66 +1,45 @@
 "use strict";
 
 module.exports = {
-  // Добавим описание на русском языке ко всем типам
   types: [
     {
       value: "build",
-      name: "build:     Сборка проекта или изменения внешних зависимостей",
+      name: "build:     Build the project or change external dependencies",
     },
     { value: "ci", name: "ci:        Настройка CI и работа со скриптами" },
-    { value: "docs", name: "docs:      Обновление документации" },
-    { value: "feat", name: "feat:      Добавление нового функционала" },
-    { value: "fix", name: "fix:       Исправление ошибок" },
+    { value: "docs", name: "docs:      Setting up CI and working with scripts" },
+    { value: "feat", name: "feat:      Add new feature" },
+    { value: "fix", name: "fix:       Bug fix" },
     {
       value: "perf",
-      name: "perf:      Изменения направленные на улучшение производительности",
+      name: "perf:      Changes to improve performance",
     },
     {
       value: "refactor",
       name:
-        "refactor:  Правки кода без исправления ошибок или добавления новых функций",
+        "refactor:  Code changes without fixing bugs or adding new features",
     },
-    { value: "revert", name: "revert:    Откат на предыдущие коммиты" },
-    {
-      value: "style",
-      name:
-        "style:     Правки по кодстайлу (табы, отступы, точки, запятые и т.д.)",
-    },
-    { value: "test", name: "test:      Добавление тестов" },
+    { value: "revert", name: "revert:    Revert to previous commits" },
+    { value: "test", name: "test:      Add tests" },
   ],
 
-  // Область. Она характеризует фрагмент кода, которую затронули изменения
-  scopes: [
-    { name: "components" },
-    { name: "tutorial" },
-    { name: "catalog" },
-    { name: "product" },
-  ],
-
-  // Поменяем дефолтные вопросы
   messages: {
-    type: "Какие изменения вы вносите?",
-    scope: "\nВыберите ОБЛАСТЬ, которую вы изменили (опционально):",
-    // Спросим если allowCustomScopes в true
-    customScope: "Укажите свою ОБЛАСТЬ:",
-    subject: "Напишите КОРОТКОЕ описание в ПОВЕЛИТЕЛЬНОМ наклонении:\n",
+    type: "What changes are you making?",
+    customScope: "Specify the scope:",
+    subject: "Write a short description in the imperative:\n",
     body:
-      'Напишите ПОДРОБНОЕ описание (опционально). Используйте "|" для новой строки:\n',
-    breaking: "Список BREAKING CHANGES (опционально):\n",
+      'Write a detailed description (optional). Use "|" for a new line:\n',
+    breaking: "BREAKING CHANGES list (optional):\n",
     footer:
-      "Место для мета данных (тикетов, ссылок и остального). Например: SECRETMRKT-700, SECRETMRKT-800:\n",
-    confirmCommit: "Вас устраивает получившийся коммит?",
+      "A place for meta data (tickets, links and the rest).\n",
+    confirmCommit: "Are you satisfied with the resulting commit?",
   },
 
-  // Разрешим собственную ОБЛАСТЬ
   allowCustomScopes: true,
 
-  // Запрет на Breaking Changes
   allowBreakingChanges: false,
 
-  // Префикс для нижнего колонтитула
-  footerPrefix: "МЕТА ДАННЫЕ:",
+  footerPrefix: "META DATA:",
 
-  // limit subject length
   subjectLimit: 72,
 };
