@@ -24,9 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "print 'hi'",
-      "commit-msg": "print 'hi'",
-      "prepare-commit-msg": "print 'hi'"
+      "pre-commit": "jest"
     }
   },
   "eslintConfig": {
