@@ -6050,20 +6050,18 @@
   "resolved" "https://registry.npmjs.org/human-signals/-/human-signals-1.1.1.tgz"
   "version" "1.1.1"
 
-"husky@3.1.0":
-  "integrity" "sha512-FJkPoHHB+6s4a+jwPqBudBDvYZsoQW5/HBuMSehC8qDiCe50kpcxeqFoDSlow+9I6wg47YxBoT3WxaURlrDIIQ=="
-  "resolved" "https://registry.npmjs.org/husky/-/husky-3.1.0.tgz"
-  "version" "3.1.0"
+"husky@2.5.0":
+  "integrity" "sha512-/aQIBaVMuzGi5X5BPliDPbHE+G+HDpWV7Zu28DiiXFMvHQcOeTsEnODWIGKyGBp7GM7rOgkxQdF+6AEo6xNtkw=="
+  "resolved" "https://registry.npmjs.org/husky/-/husky-2.5.0.tgz"
+  "version" "2.5.0"
   dependencies:
-    "chalk" "^2.4.2"
-    "ci-info" "^2.0.0"
     "cosmiconfig" "^5.2.1"
     "execa" "^1.0.0"
     "get-stdin" "^7.0.0"
-    "opencollective-postinstall" "^2.0.2"
+    "is-ci" "^2.0.0"
     "pkg-dir" "^4.2.0"
-    "please-upgrade-node" "^3.2.0"
-    "read-pkg" "^5.2.0"
+    "please-upgrade-node" "^3.1.1"
+    "read-pkg" "^5.1.1"
     "run-node" "^1.0.0"
     "slash" "^3.0.0"
 
@@ -8281,11 +8279,6 @@
     "is-docker" "^2.0.0"
     "is-wsl" "^2.1.1"
 
-"opencollective-postinstall@^2.0.2":
-  "integrity" "sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q=="
-  "resolved" "https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz"
-  "version" "2.0.3"
-
 "opn@^5.5.0":
   "integrity" "sha512-PqHpggC9bLV0VeWcdKhkpxY+3JTzetLSqTCWL/z/tFIbI6G8JCjondXklT1JinczLz2Xib62sSp0T/gKT4KksA=="
   "resolved" "https://registry.npmjs.org/opn/-/opn-5.5.0.tgz"
@@ -8675,7 +8668,7 @@
   dependencies:
     "find-up" "^3.0.0"
 
-"please-upgrade-node@^3.2.0":
+"please-upgrade-node@^3.1.1":
   "integrity" "sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg=="
   "resolved" "https://registry.npmjs.org/please-upgrade-node/-/please-upgrade-node-3.2.0.tgz"
   "version" "3.2.0"
@@ -9802,7 +9795,7 @@
     "normalize-package-data" "^2.3.2"
     "path-type" "^2.0.0"
 
-"read-pkg@^5.2.0":
+"read-pkg@^5.1.1", "read-pkg@^5.2.0":
   "integrity" "sha512-Ug69mNOpfvKDAc2Q8DRpMjjzdtrnv9HcSMX+4VsZxD1aZ6ZzrIE7rlzXBtWTyhULSMKg076AW6WR5iZpD0JiOg=="
   "resolved" "https://registry.npmjs.org/read-pkg/-/read-pkg-5.2.0.tgz"
   "version" "5.2.0"
