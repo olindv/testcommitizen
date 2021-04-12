@@ -2,6 +2,12 @@
   "name": "testing-commitizen",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -14,19 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "cz-customizable": "^6.3.0",
-    "husky": "2.5.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/git/commitlint.js'"
-    }
+    "husky": "^4.3.0"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +46,12 @@
     },
     "cz-customizable": {
       "config": "config/git/commitizen.js"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/git/commitlint.js'"
     }
   }
 }
